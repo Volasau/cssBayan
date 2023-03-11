@@ -47,10 +47,6 @@ body {
 	margin: 0.2rem 0;
 }
 
-.accordion__card {
-	border: 1px solid black
-}
-
 .accordion__title {
 	display: flex;
 	justify-content: space-between;
@@ -115,4 +111,14 @@ body {
 .accordion__label:hover .accordion__title img {
 	transform: rotate(90deg);
 	transition: .6s;
+}
+
+.accordion__card:hover .accordion__title img {
+	transform: rotate(90deg);
+	transition: .6s;
+}
+
+.accordion__card:hover .accordion__img-mem img {
+	height: auto;
+	margin: 2rem;
 }
