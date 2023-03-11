@@ -47,6 +47,10 @@ body {
 	margin: 0.2rem 0;
 }
 
+.accordion__card {
+	border: 1px solid black
+}
+
 .accordion__title {
 	display: flex;
 	justify-content: space-between;
