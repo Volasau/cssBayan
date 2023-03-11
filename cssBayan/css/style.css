@@ -99,7 +99,11 @@ body {
 	opacity: 1;
 }
 
-.container__accordion:hover .accordion__card .accordion__label .accordion__title .accordion__title-question {
+.container__accordion:hover .accordion__label .accordion__title .accordion__title-question {
+	color: #000
+}
+
+.accordion__card {
 	color: #000
 }
 
@@ -122,6 +126,11 @@ body {
 	height: auto;
 	margin: 2rem;
 }
+
+.accordion__card:active .accordion__label .accordion__title .accordion__title-question {
+	color: blue;
+}
+
 
 .accordion__card:active .accordian__mem {
 	opacity: 0.3;
