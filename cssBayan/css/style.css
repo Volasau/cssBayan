@@ -122,3 +122,7 @@ body {
 	height: auto;
 	margin: 2rem;
 }
+
+.accordion__card:active .accordian__mem {
+	opacity: 0.3;
+}
