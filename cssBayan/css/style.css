@@ -95,42 +95,44 @@ body {
 	color: #000000;
 }
 
-.container__accordion:hover .accordion__card .accordion__label .accordion__title img {
-	opacity: 1;
-}
-
-.container__accordion:hover .accordion__label .accordion__title .accordion__title-question {
-	color: #000
-}
-
 .accordion__card {
 	color: #000
 }
 
-.accordion__label:hover .accordion__img-mem img {
-	height: auto;
-	margin: 2rem;
-}
+@media(hover:hover) {
 
-.accordion__label:hover .accordion__title img {
-	transform: rotate(90deg);
-	transition: .6s;
-}
+	.container__accordion:hover .accordion__card .accordion__label .accordion__title img {
+		opacity: 1;
+	}
 
-.accordion__card:hover .accordion__title img {
-	transform: rotate(90deg);
-	transition: .6s;
-}
+	.container__accordion:hover .accordion__label .accordion__title .accordion__title-question {
+		color: #000
+	}
 
-.accordion__card:hover .accordion__img-mem img {
-	height: auto;
-	margin: 2rem;
+	.accordion__label:hover .accordion__img-mem img {
+		height: auto;
+		margin: 2rem;
+	}
+
+	.accordion__label:hover .accordion__title img {
+		transform: rotate(90deg);
+		transition: .6s;
+	}
+
+	.accordion__card:hover .accordion__title img {
+		transform: rotate(90deg);
+		transition: .6s;
+	}
+
+	.accordion__card:hover .accordion__img-mem img {
+		height: auto;
+		margin: 2rem;
+	}
 }
 
 .accordion__card:active .accordion__label .accordion__title .accordion__title-question {
 	color: blue;
 }
-
 
 .accordion__card:active .accordian__mem {
 	opacity: 0.3;
