@@ -81,12 +81,13 @@ body {
 }
 
 .accordion__input:checked~.accordion__label .accordion__img-mem img {
-	height: auto;
+	height: 14rem;
+	width: 14rem;
 	margin: 2rem;
 	transition: .6s;
 }
 
-.accordion__input:checked~.accordion__label>.accordion__title img {
+.accordion__input:checked~.accordion__label>.accordion__title .accordion__icon {
 	transform: rotate(90deg);
 	transition: .6s;
 }
@@ -101,7 +102,7 @@ body {
 
 @media(hover:hover) {
 
-	.container__accordion:hover .accordion__card .accordion__label .accordion__title img {
+	.container__accordion:hover .accordion__card .accordion__label .accordion__title .accordion__icon {
 		opacity: 1;
 		transition: all 1s ease;
 	}
@@ -112,32 +113,41 @@ body {
 	}
 
 	.accordion__label:hover .accordion__img-mem img {
-		height: auto;
+		height: 14rem;
+		width: 14rem;
 		margin: 2rem;
 	}
 
-	.accordion__label:hover .accordion__title img {
+	.accordion__label:hover .accordion__title .accordion__icon {
 		transform: rotate(90deg);
 		transition: .6s;
 	}
 
-	.accordion__card:hover .accordion__title img {
+	.accordion__card:hover .accordion__title .accordion__icon {
 		transform: rotate(90deg);
 		transition: .6s;
 	}
 
 	.accordion__card:hover .accordion__img-mem img {
-		height: auto;
+		height: 14rem;
+		width: 14rem;
 		margin: 2rem;
 	}
 }
 
 .accordion__card:active .accordion__label .accordion__title .accordion__title-question {
 	color: blue;
+	transition: 0.3s;
 }
 
 .accordion__card:active .accordian__mem {
 	opacity: 0.3;
+	transition: 0.3s;
+}
+
+.accordion__card:active .accordion__icon {
+	fill: #0000ff;
+	transition: 0.1s;
 }
 
 @media screen and (max-width: 1180px) {
